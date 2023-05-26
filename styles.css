@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #efeff2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 300px;
+    height:500px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, .3);
+    border-radius: 12px;
+    background-color: #22252d;
+}
+
+form input {
+    width: 100%;
+    height: 75px;
+    border: none;
+    border-radius: 12px;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    text-align: right;
+    pointer-events: none;
+}
+
+form .result {
+    font-size: 45px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button {
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+}
+
+
+.btn-yellow {
+    background-color: rgb(245, 146, 62);
+    color: white;
+}
+
+.btn-yellow:hover {
+    background-color: rgb(250, 158, 78);
+}
+
+.btn-grey {
+    background-color: rgb(224, 224, 224);
+}
+
+.btn-grey:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-equal {
+    background-color: green;
+    color: white;
+    flex: 0 0 48%
+}
+
+.btn-equal:hover {
+    background-color: rgb(13, 150, 13);
+}
+
+.btn-clear {
+    background-color: red;
+    color: white;
+    /* flex: 0 0 48% */
+}
+
+.btn-clear:hover {
+    background-color: rgb(255, 53, 53);
+}
+
+.btn-delete {
+    background-color: rgb(251, 255, 0);
+}
+
+.btn-delete:hover {
+    background-color: rgb(168, 170, 49);
+}
+
+/* ANIMATIONS */
+
+.myAnimation {
+    animation: myAnimation 1s ease;
+  }
+  
+  @keyframes myAnimation {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
